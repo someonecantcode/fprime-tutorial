@@ -63,6 +63,12 @@ module HiNamespace {
   #   queue size Default.QUEUE_SIZE \
   #   stack size Default.STACK_SIZE \
   #   priority 50
+
+  instance holaCmpntInstance: YourComponent base id 0x10008000 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 50
+
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------

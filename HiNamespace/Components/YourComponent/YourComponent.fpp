@@ -4,8 +4,18 @@ module HiNamespace {
 
         # One async command/port is required for active components
         # This should be overridden by the developers with a useful command/port
-        @ TODO
-        async command TODO opcode 0
+        @ Command to issue greeting with maximum length of 20 characters
+        async command SAY_HOLA(
+            greeting: string size 20 @< Greeting to repeat in the SayHiEvent event
+        )
+
+        @ Greeting event with maximum greeting length of 20 characters
+        event SayHolaEvent(
+            greeting: string size 20 @< Greeting supplied from the SAY_HI command
+        ) severity activity high format "I say: {}"
+
+        @ A count of the number of greetings issued
+        telemetry HolaCount: U32
 
         ##############################################################################
         #### Uncomment the following examples to start customizing your component ####

@@ -35,6 +35,7 @@ module HiNamespace {
     instance hiCmpntInstance
   #  instance duplicateCmpntInstance
   #  instance INTRODUCE_ME
+    instance holaCmpntInstance
 
   # ----------------------------------------------------------------------
   # Pattern graph specifiers
